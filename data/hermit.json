@@ -7,19 +7,26 @@
     "greet": {
       "text": "hello",
       "options": [
-        { "text": "just passing by", "next": "farewell" },
-        { "text": "looking for wisdom", "next": "wisdom" }
+        { "text": "who are you", "next": "explain" },
+        { "text": "what do you want", "next": "quest" }
       ]
     },
-    "wisdom": {
-      "text": "Wisdom comes at the price of patience",
+    "explain": {
+      "text": "I am old hermit",
       "options": [
-        { "text": "I understand", "next": "farewell" },
-        { "text": "No thanks", "next": "farewell" }
+        { "text": "i dont care who you are, im going", "next": "farewell" },
+        { "text": "what do you want", "next": "quest" }
+      ]
+    },
+    "quest": {
+      "text": "lets kill the dragon",
+      "options": [
+        { "text": "no i dont want to", "next": "farewell" },
+        { "text": "lets go", "next": "farewell" }
       ]
     },
     "farewell": {
-      "text": "farewell traveller",
+      "text": "farewell",
       "is_end": true
     }
   }
