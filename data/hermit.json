@@ -1,12 +1,8 @@
 {
-  "name": "adheeb",
-  "age": 23,
-  "foods": ["apple", "banana", "orange"],
-  "fitness_stats": { "weight": 12, "height": 178 },
-  "income": 2500,
-  "savings_goal": 150000,
-  "expenses": [
-    { "category": "groceries", "amount": 100 },
-    { "category": "rent", "amount": 200 }
+  "class_name": "model school",
+  "students": [
+    { "id": 1, "name": "adheeb", "age": 12, "subjects": ["Math", "physics"] },
+    { "id": 2, "name": "adheeb", "age": 13, "subjects": ["Math", "physics"] },
+    { "id": 3, "name": "adheeb", "age": 14, "subjects": ["Math", "physics"] }
   ]
 }
