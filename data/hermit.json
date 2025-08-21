@@ -1,8 +1,26 @@
 {
-  "class_name": "model school",
-  "students": [
-    { "id": 1, "name": "adheeb", "age": 12, "subjects": ["Math", "physics"] },
-    { "id": 2, "name": "adheeb", "age": 13, "subjects": ["Math", "physics"] },
-    { "id": 3, "name": "adheeb", "age": 14, "subjects": ["Math", "physics"] }
-  ]
+  "npc": {
+    "name": "old hermit",
+    "start_node": "greet"
+  },
+  "nodes": {
+    "greet": {
+      "text": "hello",
+      "options": [
+        { "text": "just passing by", "next": "farewell" },
+        { "text": "looking for wisdom", "next": "wisdom" }
+      ]
+    },
+    "wisdom": {
+      "text": "Wisdom comes at the price of patience",
+      "options": [
+        { "text": "I understand", "next": "farewell" },
+        { "text": "No thanks", "next": "farewell" }
+      ]
+    },
+    "farewell": {
+      "text": "farewell traveller",
+      "is_end": true
+    }
+  }
 }
