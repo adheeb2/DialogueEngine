@@ -19,11 +19,20 @@
       ]
     },
     "quest": {
-      "text": "lets kill the dragon",
+      "text": "Only the worthy may receive my quest... Do you have the Amulet of Light?",
+      "condition": "has_item:amulet_of_light",
       "options": [
-        { "text": "no i dont want to", "next": "farewell" },
-        { "text": "lets go", "next": "farewell" }
+        {
+          "text": "yes here it is",
+          "next": "quest_give",
+          "action": "remove_item:amulet_of_light,give_quest:slay_dragon"
+        },
+        { "text": "No not yet", "next": "greet" }
       ]
+    },
+    "quest_give": {
+      "text": "Then go! slay the dragon",
+      "options": [{ "text": "I wont fail you", "next": "farewell" }]
     },
     "farewell": {
       "text": "farewell",
