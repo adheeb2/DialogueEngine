@@ -8,32 +8,45 @@
       "text": "hello",
       "options": [
         { "text": "who are you", "next": "explain" },
-        { "text": "what do you want", "next": "quest" }
+        { "text": "what do you want", "next": "quest_check" }
       ]
     },
     "explain": {
       "text": "I am old hermit",
       "options": [
         { "text": "i dont care who you are, im going", "next": "farewell" },
-        { "text": "what do you want", "next": "quest" }
+        { "text": "what do you want", "next": "quest_check" }
       ]
     },
-    "quest": {
-      "text": "Only the worthy may receive my quest... Do you have the Amulet of Light?",
+
+    "quest_check": {
       "condition": "has_item:amulet_of_light",
+      "true_next": "quest_ready",
+      "false_next": "quest_locked"
+    },
+
+    "quest_ready": {
+      "text": "Ah, you carry the Amulet of Light! Then you are worthy.",
       "options": [
         {
           "text": "yes here it is",
           "next": "quest_give",
           "action": "remove_item:amulet_of_light,give_quest:slay_dragon"
         },
-        { "text": "No not yet", "next": "greet" }
+        { "text": "On second thought, not now", "next": "greet" }
       ]
     },
-    "quest_give": {
-      "text": "Then go! slay the dragon",
-      "options": [{ "text": "I wont fail you", "next": "farewell" }]
+
+    "quest_locked": {
+      "text": "Only the worthy may receive my quest... Return when you have the Amulet of Light.",
+      "options": [{ "text": "I'll be back later", "next": "greet" }]
     },
+
+    "quest_give": {
+      "text": "Then go! Slay the dragon!",
+      "options": [{ "text": "I won’t fail you", "next": "farewell" }]
+    },
+
     "farewell": {
       "text": "farewell",
       "is_end": true
