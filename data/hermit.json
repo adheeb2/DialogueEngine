@@ -1,35 +1,12 @@
 {
-  "npc": {
-    "name": "Old hermit",
-    "start_node": "greet"
-  },
-  "nodes": {
-    "greet": {
-      "text": "hello my fellow traveller, what brings you to the cave?",
-      "options": [
-        { "text": "I'm just seeking through", "next": "Farewell" },
-        { "text": "I seek a quest", "next": "quest_check" }
-      ],
-      "quest_check": {
-        "text": "Only the worthy may receive the quest, do you have the sword",
-        "conditions": "has the sword",
-        "options": [
-          {
-            "text": "Yes i do have the sword",
-            "next": "quest_give",
-            "action": "remove_item:sword,give:quest:slay_dragon"
-          },
-          { "text": "No i dont have the sword", "next": "Farewell" }
-        ]
-      },
-      "quest_give": {
-        "text": "Then go! SLay the dragon and be victorious",
-        "options": [{ "text": "I wont fail you", "next": "Farewell" }]
-      },
-      "Farewell": {
-        "text": "may the winds guide your path",
-        "is_end": true
-      }
-    }
-  }
+  "name": "adheeb",
+  "age": 23,
+  "foods": ["apple", "banana", "orange"],
+  "fitness_stats": { "weight": 12, "height": 178 },
+  "income": 2500,
+  "savings_goal": 150000,
+  "expenses": [
+    { "category": "groceries", "amount": 100 },
+    { "category": "rent", "amount": 200 }
+  ]
 }
