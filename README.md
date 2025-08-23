@@ -21,6 +21,30 @@ Here’s a snapshot of the hermit dialogue in action:
 
 ![Rule-based NPC Dialogue System  Demo](images/hermit1.png)
 
+The project consist of four commands which is shown in this picture.
+
+when the user types on 'talk to hermit', the conversation with the npc starts
+
+![Rule-based NPC Dialogue System  Demo](images/hermit2.png)
+
+Initially the player has neither objects in his inventory nor any quests.
+
+![Rule-based NPC Dialogue System  Demo](images/hermit3.png)
+
+So when we try to ask the 2nd option, we are met with a condition of not having the amulet of light
+
+![Rule-based NPC Dialogue System  Demo](images/hermit4.png)
+
+We then quit the convo and go back to gain the amulet by typing that command. As you can see, we will gain that object
+
+![Rule-based NPC Dialogue System  Demo](images/hermit5.png)
+
+Now with this, we move on with the convo and we will lose the amulet of light from the inventory and will gain a new quest as you see in this picture
+
+![Rule-based NPC Dialogue System  Demo](images/hermit6.png)
+
+This can be seen when we type on the status command
+
 ## Project Structure
 
 ```
