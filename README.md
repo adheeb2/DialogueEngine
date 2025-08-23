@@ -17,12 +17,9 @@ python main.py
 
 ## Quick demo
 
-```
-> talk to hermit       # Start conversation with the hermit
-> give_amulet          # Add "amulet_of_light" to your inventory
-> status               # Check your inventory and quests
-> quit                 # Exit the program
-```
+Here’s a snapshot of the hermit dialogue in action:
+
+![Rule-based NPC Dialogue System  Demo](images/hermit1.png)
 
 ## Project Structure
 
