@@ -5,14 +5,14 @@
   },
   "nodes": {
     "greet": {
-      "text": "hello",
+      "text": "hello my dear traveller",
       "options": [
         { "text": "who are you", "next": "explain" },
         { "text": "what do you want", "next": "quest_check" }
       ]
     },
     "explain": {
-      "text": "I am old hermit",
+      "text": "I am old hermit, may i know your name?",
       "options": [
         { "text": "i dont care who you are, im going", "next": "farewell" },
         { "text": "what do you want", "next": "quest_check" }
