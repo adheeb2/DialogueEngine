@@ -57,6 +57,7 @@ DialogueEngine/
 │   └── hermit.json        # Sample NPC dialogue tree
 ├── README.md             # Project documentation
 ├── LICENSE               # MIT License
+├── images               # Images
 └── .gitignore           # Git ignore rules
 ```
 
