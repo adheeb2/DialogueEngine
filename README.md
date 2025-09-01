@@ -71,6 +71,8 @@ I’ve mapped out 15 projects across three themes:
 
 3- AI Agent Orchestration → (multi-agent debates, quest generators, self-improving NPCs, and eventually a full AI Game Master)
 
+This is my first project in "15 projects to master Conversational AI" series
+
 The hermit JSON you’re looking at right now is literally the first brick in a system that will grow into:
 
 NPCs with personalities, memories, and backstories
